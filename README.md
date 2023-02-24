@@ -2,13 +2,13 @@
 QT application for automatic perfect maze and cavity generation.
 ## Build instructions
 ### Linux/Mac
-- In the terminal move to the build directory
-- cmake -S ../ -B .
-- make install
+1. move to the build directory
+- run "cmake -S ../ -B ."
+- run "make build"
 ### Windows
-- first
-- second
-- third
+- move to the build directory
+- run "cmake -S ../ -B ."
+- run "cmake --build . --config Release"
 ## Maze generation
 ![maze image](pictures/maze.png)
 - "Generate maze" button will create perfect maze of specified size. A maze is considered perfect if it is possible to get from each point to any other point in exactly one way. Eller's algorithm is used for maze generation.
