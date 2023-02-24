@@ -2,9 +2,9 @@
 QT application for automatic perfect maze and cavity generation.
 ## Build instructions
 ### Linux/Mac
-- first
-- second
-- third
+- In the terminal move to the build directory
+- cmake -S ../ -B .
+- make install
 ### Windows
 - first
 - second
@@ -16,3 +16,8 @@ QT application for automatic perfect maze and cavity generation.
 - You can find shortest path on maze between any 2 given points by clicking "solve maze" button. To specify points, just click on the maze where you want point to be. Second click on the same spot will delete point.
 ## Cavity generation
 ![cavity image](pictures/cavity.png)
+- "Generate cavity" button will create randomly colored black and white "cavity" of specified size.
+- "Next step" button will do following:
+  1. Every alive cell with less living cells around it than "Death limit" will die.
+  2. Every dead cell with more linving cells around it than "Live limit" will get alive.
+- "next spet with interval" button will apply "next step" operation periodically untill static state will be reached.
