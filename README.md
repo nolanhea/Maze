@@ -5,7 +5,7 @@ Project requires QT libraries installed.
 ### Linux/Mac
 1. move to the build directory
 2. run "cmake -S ../ -B ."
-3. run "make build"
+3. run "make install"
 ### Windows
 1. move to the build directory
 2. run "cmake -S ../ -B ."
